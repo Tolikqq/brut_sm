@@ -19,8 +19,7 @@ def process(procs, calc):
 
 
 def start_parse(calc, proc):
-    login = 'rfd_21731'
-    # rfd_21743
+    login = 'rfd_21759'
     # password = 00000
     start = time.time()
     index_start = (proc - 1) * calc
