@@ -65,6 +65,6 @@ class Smotreshka:
         url = 'http://fe.smotreshka.tv/login'
         values = {'email': self._email, 'password': self._password}
         r = requests.post(url, values,  timeout=10, allow_redirects=False,
-                          verify=False, proxies=self._proxies)
+                          verify=False, proxies=self.get_proxies())
 
         return r.status_code == 200
